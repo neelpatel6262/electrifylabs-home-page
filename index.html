@@ -39,10 +39,39 @@
           </svg>
         </div>
       </button>
+      <div class="hamburger-menu">
+        <svg class="icon-menu" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="4" y1="12" x2="20" y2="12" />
+          <line x1="4" y1="6" x2="20" y2="6" />
+          <line x1="4" y1="18" x2="20" y2="18" />
+        </svg>
+        <svg class="icon-close" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M18 6 6 18" />
+          <path d="m6 6 12 12" />
+        </svg>
+      </div>
+    </div>
+    <div class="mobile-nav-links">
+      <a href="">about</a>
+      <a href="">service</a>
+      <a href="">product</a>
+      <a href="">library</a>
+      <a href="">blogs</a>
+      <button class="navbar-btn">
+
+        <div class="navbar-btn-conatiner">
+          contact us <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            class="lucide lucide-arrow-up-right-icon lucide-arrow-up-right">
+            <path d="M7 7h10v10" />
+            <path d="M7 17 17 7" />
+          </svg>
+        </div>
+      </button>
     </div>
   </div>
-
-  <!-- 
+  <main>
+    <!--
   hero-section -->
 
 
@@ -578,11 +607,11 @@
       </div>
     </div>
   </div>
-
+  </main>
 
   <!-- footer-section -->
 
-  <div class="footer-section">
+  <footer class="footer-section">
     <div class="footer-container">
       <div class="footer-content">
         <div class="footer-section-content">
@@ -603,8 +632,7 @@
               <a href="#">about</a>
               <a href="#">service</a>
               <a href="#">product</a>
-              <div class="new-tag">new</div>
-              <a href="#">library</a>
+              <a href="#">library<span class="new-tag">new</span></a>
               <a href="#">blogs</a>
             </div>
 
@@ -631,8 +659,19 @@
         <p>© 2025 ElectrifyLabs. All rights reserved.</p>
       </div>
     </div>
-  </div>
+  </footer>
 
+  <script>
+    const hamburgerMenu = document.querySelector('.hamburger-menu');
+    const mobileNavLinks = document.querySelector('.mobile-nav-links');
+    const body = document.querySelector('body');
+
+    hamburgerMenu.addEventListener('click', () => {
+      hamburgerMenu.classList.toggle('active');
+      mobileNavLinks.classList.toggle('active');
+      body.classList.toggle('no-scroll');
+    });
+  </script>
 </body>
 
 </html>
