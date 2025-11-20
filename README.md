@@ -1,6 +1,6 @@
 # ⚡ ElectrifyLabs Homepage
 
-A static website built with pure HTML and CSS, created as a practice project to improve design-to-code conversion skills. The entire design was created in Figma and then meticulously translated into clean, semantic HTML and CSS code.
+A static website built with pure HTML and CSS, created as a practice project to improve design-to-code conversion skills. The entire design was created By Me in Figma and then meticulously translated into clean, semantic HTML and CSS code.
 
 ## 🎨 Preview
 
